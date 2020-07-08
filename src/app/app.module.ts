@@ -16,19 +16,23 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 /* Angular Flex Layout */
 import { FlexLayoutModule } from "@angular/flex-layout";
 
+import { LayoutModule } from './layout/layout.module';
+
 /* Components */
-import { LogInComponent } from './components/log-in/log-in.component';
-import { RegisterComponent } from './components/register/register.component';
-import { LancamentoComponent } from './components/lancamento/lancamento.component';
+//import { LogInComponent } from './components/log-in/log-in.component';
+//import { RegisterComponent } from './components/register/register.component';
+//import { LancamentoComponent } from './components/lancamento/lancamento.component';
+//import { LayoutComponent } from './layout/layout.component';
+//import { LayoutModule } from '@angular/cdk/layout';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LogInComponent,
-    RegisterComponent,
-    LancamentoComponent,
-    LogInComponent
+    AppComponent
+    //LogInComponent,
+    //RegisterComponent,
+    //LogInComponent,
+    //LancamentoComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +41,8 @@ import { LancamentoComponent } from './components/lancamento/lancamento.componen
     AngularMaterialModule,
     ReactiveFormsModule,
     FormsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent],

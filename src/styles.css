@@ -73,6 +73,12 @@ body {
   z-index: -1;
 }
 
+.find-wrapper {
+  min-width: 100%;
+  max-width: 100%;
+  width: 100%;
+}
+
 .login-wrapper .example-form {
   min-width: 100%;
   max-width: 300px;
