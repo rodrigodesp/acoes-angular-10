@@ -3,14 +3,14 @@ import { CommonModule } from '@angular/common';
 
 import { LayoutComponent } from './layout.component';
 import { HeaderComponent } from './header/header.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   imports: [
-    CommonModule
+    SharedModule
   ],
   declarations: [
-    LayoutComponent,
-    HeaderComponent
+    LayoutComponent
   ],
   exports : [
     LayoutComponent        
