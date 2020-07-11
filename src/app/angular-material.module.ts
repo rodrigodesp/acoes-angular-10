@@ -18,8 +18,6 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatCardModule } from '@angular/material/card';
-import { MatMenuTrigger } from '@angular/material/menu';
-
 
 @NgModule({
    imports: [
@@ -47,9 +45,6 @@ import { MatMenuTrigger } from '@angular/material/menu';
   MatInputModule,
   MatRadioModule,
   MatSelectModule,
-
-  MatMenuTrigger,
-
   
   MatNativeDateModule,
   // MatMomentDateModule,
@@ -98,9 +93,6 @@ import { MatMenuTrigger } from '@angular/material/menu';
   MatInputModule,
   MatRadioModule,
   MatSelectModule,
-
-  MatMenuTrigger,
-
   
   MatNativeDateModule,
   // MatMomentDateModule,
