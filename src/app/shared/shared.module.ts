@@ -6,6 +6,8 @@ import { AngularMaterialModule } from '../angular-material.module';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
+import {MatProgressBarModule} from '@angular/material/progress-bar'
+
 @NgModule({
   imports: [
     CommonModule,
@@ -14,7 +16,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     AngularMaterialModule,
     ReactiveFormsModule,
     FormsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatProgressBarModule
   ],
   declarations: [],
   exports: [
@@ -24,7 +27,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     AngularMaterialModule,
     ReactiveFormsModule,
     FormsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatProgressBarModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

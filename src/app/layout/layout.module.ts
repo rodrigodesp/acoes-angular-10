@@ -10,10 +10,12 @@ import { SharedModule } from '../shared/shared.module';
     SharedModule
   ],
   declarations: [
-    LayoutComponent
+    LayoutComponent,
+    HeaderComponent
   ],
   exports : [
-    LayoutComponent        
+    LayoutComponent,
+    HeaderComponent        
   ]
 })
 export class LayoutModule { }

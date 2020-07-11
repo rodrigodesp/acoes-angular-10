@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 
 import { LayoutModule } from './layout/layout.module';
 import { SharedModule } from './shared/shared.module';
+import { NgModule } from '@angular/core';
 
 /* Components */
 //import { LogInComponent } from './components/log-in/log-in.component';
