@@ -18,6 +18,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatCardModule } from '@angular/material/card';
+import { MatMenuTrigger } from '@angular/material/menu';
 
 
 @NgModule({
@@ -40,9 +41,40 @@ import { MatCardModule } from '@angular/material/card';
       MatTooltipModule,
       MatTableModule,
       MatPaginatorModule,
-      MatCardModule
+      MatCardModule,
+  MatDatepickerModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatRadioModule,
+  MatSelectModule,
+
+  MatMenuTrigger,
+
+  
+  MatNativeDateModule,
+  // MatMomentDateModule,
+
+  MatSidenavModule,
+  MatToolbarModule,
+  
+  MatCardModule,
+  MatGridListModule,
+  MatListModule,
+
+  
+  MatButtonModule,
+  MatBadgeModule,
+  MatChipsModule,
+  MatIconModule,
+ 
+  MatTooltipModule,
+  
+  MatPaginatorModule,
+
+  MatTableModule
    ],
    exports: [
+           CommonModule,
       MatButtonModule,
       MatToolbarModule,
       MatIconModule,
@@ -50,16 +82,47 @@ import { MatCardModule } from '@angular/material/card';
       MatBadgeModule,
       MatListModule,
       MatGridListModule,
-      MatInputModule,
       MatFormFieldModule,
+      MatInputModule,
       MatSelectModule,
       MatRadioModule,
       MatDatepickerModule,
+      MatNativeDateModule,
       MatChipsModule,
       MatTooltipModule,
       MatTableModule,
       MatPaginatorModule,
-      MatCardModule
+      MatCardModule,
+  MatDatepickerModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatRadioModule,
+  MatSelectModule,
+
+  MatMenuTrigger,
+
+  
+  MatNativeDateModule,
+  // MatMomentDateModule,
+
+  MatSidenavModule,
+  MatToolbarModule,
+  
+  MatCardModule,
+  MatGridListModule,
+  MatListModule,
+
+  
+  MatButtonModule,
+  MatBadgeModule,
+  MatChipsModule,
+  MatIconModule,
+ 
+  MatTooltipModule,
+  
+  MatPaginatorModule,
+
+  MatTableModule
    ],
    providers: [
       MatDatepickerModule,

@@ -1,24 +1,45 @@
-<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
-  <mat-card class="box">
-        <mat-card-header>
-            <div class="col-lg-12">
-                <div class="col-lg-9">                  
-                    <h3>{{ pageTitle }}</h3>
-                </div>
-                <div class="col-lg-3">
-                    <button mat-raised-button color="primary" [disabled]="!form.valid" (click)="form.ngSubmit.emit()">Teste rodrigo</button>
-                    &nbsp;&nbsp;
-                    <button type="reset" mat-raised-button color="accent" (click)="cancelForm()">Cancelado</button>
-                </div>
-            </div>
-        </mat-card-header>
-        <mat-progress-bar mode="indeterminate" *ngIf="progress"></mat-progress-bar>
-        <mat-divider></mat-divider>
-        <mat-card-content>
+<mat-toolbar color="primary">
 
-            <mat-form-field>
-<input matInput placeholder="Name [(ngModel)]="vehicleMakeViewModel.name" name="name" required #name="ngModel"></mat-form-field>
-        </mat-card-content>
+  <mat-toolbar-row>
 
-    </mat-card>
-</div>
+    <button mat-icon-button>
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <span> </span>
+
+    <div fxFlex fxLayout fxLayoutAlign="flex-end">
+
+      <ul fxLayout fxLayoutGap="20px">
+
+        <li fxHide.xs>
+          <button mat-icon-button>
+            <mat-icon>settings</mat-icon>
+          </button>
+        </li>
+
+        <li fxHide.xs>
+          <button mat-icon-button>
+            <mat-icon>help_outline</mat-icon>
+          </button>
+        </li>
+
+        <li>
+          <button mat-icon-button>
+            <mat-icon>person_outline</mat-icon>
+          </button>
+          <mat-menu #auth="matMenu">
+            <button mat-menu-item (click)="logout()">
+              <mat-icon>exit_to_app</mat-icon>
+              <span>Sign out</span>
+            </button>
+          </mat-menu>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </mat-toolbar-row>
+
+</mat-toolbar>

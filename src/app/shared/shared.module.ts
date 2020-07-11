@@ -7,17 +7,19 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import {MatProgressBarModule} from '@angular/material/progress-bar'
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
   imports: [
     CommonModule,
     BrowserModule,    
     BrowserAnimationsModule,
-    AngularMaterialModule,
     ReactiveFormsModule,
     FormsModule,
     FlexLayoutModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatToolbarModule,
+    AngularMaterialModule
   ],
   declarations: [],
   exports: [
@@ -28,7 +30,8 @@ import {MatProgressBarModule} from '@angular/material/progress-bar'
     ReactiveFormsModule,
     FormsModule,
     FlexLayoutModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatToolbarModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
